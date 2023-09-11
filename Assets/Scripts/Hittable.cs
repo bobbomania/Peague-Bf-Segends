@@ -3,25 +3,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Hittable : MonoBehaviour {
-    [SerializeField]
-    float autoRange;
-    [SerializeField]
-    float speed;
-    [SerializeField]
-    float attackDamage;
-    [SerializeField]
-    float abilityPower;
-    [SerializeField]
-    float armour;
-    [SerializeField]
-    float magicResis;
-    [SerializeField]
-    protected Rigidbody rb;
-    [SerializeField]
-    float healthPoints;
+public enum Team {blue, red}
 
-    abstract public void attackFunction();
+public abstract class Hittable : MonoBehaviour {
+    public Team team;
+    public float autoRange;
+    public float speed;
+    public float attackDamage;
+    public float abilityPower;
+    public float armour;
+    public float magicResist;
+    public Rigidbody rb;
+    public float healthPoints;
+    public bool invulnerable;
+    
+    public void LateUpdate() {
+        if (healthPoints <= 0) {
+            Destroy(gameObject);
+        }
+    }
+
+    abstract public bool attackFunction(GameObject hittableObject);
 
     abstract public void Start();
 

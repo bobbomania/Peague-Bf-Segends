@@ -5,38 +5,48 @@ using UnityEngine;
 
 public class Champion : Hittable
 {
-    public Camera camera;
-    RaycastHit hit;
+    Vector3 target;
 
-    void Awake()
+    public override bool attackFunction(GameObject hittableObject)
     {
-        this.rb = gameObject.AddComponent<Rigidbody>() as Rigidbody;
-        this.rb.useGravity = false;
-    }
+        Hittable hittableObjectComponent = hittableObject.GetComponent<Hittable>();
+        if (hittableObjectComponent == null) return false;
 
-    public override void attackFunction()
-    {
-        
+        bool isInRange = Vector3.Distance(new Vector3(this.rb.transform.position.x, 0, this.rb.transform.position.z), new Vector3(hittableObject.transform.position.x, 0, hittableObject.transform.position.z)) < this.autoRange;
+
+        if (isInRange && hittableObjectComponent.team != this.team && !hittableObjectComponent.invulnerable) {
+            float physicalDamage = (hittableObjectComponent.armour > this.attackDamage) ? 0 : this.attackDamage - hittableObjectComponent.armour;
+            hittableObjectComponent.healthPoints -= physicalDamage;
+            UnityEngine.Debug.Log(hittableObjectComponent.healthPoints);
+            return true;
+        }
+        return false;
     }
 
     public override void Start()
     {
+        target = this.rb.transform.position;
     }
 
     public override void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
+            RaycastHit hit;
             var targetPos = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-
-            if (Physics.Raycast(targetPos, out hit, 100))
+            if (!Physics.Raycast(targetPos, out hit, 100))
             {
-                UnityEngine.Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red);
+                this.target = this.rb.transform.position;
+            } else {
+                
+                GameObject other = hit.collider.gameObject;
+                if (!attackFunction(other)){
+                    target = hit.point;
+                }
             }
         }
 
-
-        this.rb.position = Vector3.MoveTowards(this.rb.position, hit.point, 2 * Time.deltaTime);
+        this.rb.position = Vector3.MoveTowards(this.rb.position, target, this.speed * Time.deltaTime);
     }
 }

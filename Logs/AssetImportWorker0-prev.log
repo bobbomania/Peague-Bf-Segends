@@ -15,7 +15,7 @@ C:/Users/hechawk/dev/unity/Peague-Bf-Segends
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62773
+55842
 Successfully changed project path to: C:/Users/hechawk/dev/unity/Peague-Bf-Segends
 C:/Users/hechawk/dev/unity/Peague-Bf-Segends
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/hechawk/dev/unity/Peague-Bf-Segends
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15100] Host "[IP] 192.168.2.101 [Port] 0 [Flags] 2 [Guid] 557561924 [EditorId] 557561924 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KAVOE2H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [1000] Host "[IP] 192.168.2.101 [Port] 0 [Flags] 2 [Guid] 1210119948 [EditorId] 1210119948 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KAVOE2H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15100] Host "[IP] 192.168.2.101 [Port] 0 [Flags] 2 [Guid] 557561924 [EditorId] 557561924 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KAVOE2H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1000] Host "[IP] 192.168.2.101 [Port] 0 [Flags] 2 [Guid] 1210119948 [EditorId] 1210119948 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KAVOE2H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 12.79 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 13.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.9f1 (ea401c316338)
 [Subsystems] Discovering subsystems at path D:/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'D:/2022.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005818 seconds.
-- Loaded All Assemblies, in  0.539 seconds
+Registered in 0.006754 seconds.
+- Loaded All Assemblies, in  0.536 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.408 seconds
-Domain Reload Profiling: 946ms
-	BeginReloadAssembly (152ms)
+- Finished resetting the current domain, in  0.437 seconds
+Domain Reload Profiling: 972ms
+	BeginReloadAssembly (156ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (74ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (65ms)
 	LoadAllAssembliesAndSetupDomain (246ms)
-		LoadAssemblies (151ms)
+		LoadAssemblies (155ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (243ms)
 			TypeCache.Refresh (241ms)
-				TypeCache.ScanAssembly (218ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+				TypeCache.ScanAssembly (216ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (408ms)
+	FinalizeReload (438ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (303ms)
+		SetupLoadedEditorAssemblies (337ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (205ms)
-			ProcessInitializeOnLoadMethodAttributes (72ms)
+			ProcessInitializeOnLoadAttributes (231ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,357 +115,56 @@ Domain Reload Profiling: 946ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.865 seconds
-Refreshing native plugins compatible for Editor in 4.53 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.839 seconds
+Refreshing native plugins compatible for Editor in 5.23 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.807 seconds
-Domain Reload Profiling: 1670ms
-	BeginReloadAssembly (208ms)
+- Finished resetting the current domain, in  0.778 seconds
+Domain Reload Profiling: 1616ms
+	BeginReloadAssembly (192ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (65ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (522ms)
-		LoadAssemblies (387ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (528ms)
+		LoadAssemblies (386ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (256ms)
-			TypeCache.Refresh (229ms)
-				TypeCache.ScanAssembly (208ms)
-			ScanForSourceGeneratedMonoScriptInfo (20ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (808ms)
+		AnalyzeDomain (253ms)
+			TypeCache.Refresh (227ms)
+				TypeCache.ScanAssembly (207ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (779ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (599ms)
+		SetupLoadedEditorAssemblies (567ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (478ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (435ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 5.74 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 5.88 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3531.
-Memory consumption went from 115.0 MB to 115.0 MB.
-Total: 3.610200 ms (FindLiveObjects: 0.308100 ms CreateObjectMapping: 0.306200 ms MarkObjects: 2.857200 ms  DeleteObjects: 0.137100 ms)
+Unloading 3072 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3534.
+Memory consumption went from 114.9 MB to 114.8 MB.
+Total: 3.764400 ms (FindLiveObjects: 0.367700 ms CreateObjectMapping: 0.326400 ms MarkObjects: 2.927100 ms  DeleteObjects: 0.141400 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 238778.665253 seconds.
-  path: Assets/Floor/_chunk_jungle_north_island_c_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(0d11cc15fcbd99344914663fe0740cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_north_island_c_alpha_3dcuv_atlas_color.png using Guid(0d11cc15fcbd99344914663fe0740cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ed2469c99c5b37a106609f64953374') in 0.085758 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Floor/grnd_terrain_c.png
-  artifactKey: Guid(eef30bd8830f252449cfa6b890638372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/grnd_terrain_c.png using Guid(eef30bd8830f252449cfa6b890638372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b621b2e2184736927c6681ebeaed121') in 0.019262 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Floor/_chunk_jungle_north_island_i_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(83d048da8ccd62245b2036d4153f698f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_north_island_i_alpha_3dcuv_atlas_color.png using Guid(83d048da8ccd62245b2036d4153f698f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc1c8020445e7f6930a693622d8ff21') in 0.024312 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Floor/_chunk_jungle_south_island_k_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(531d2b61b5cbdb94bae5b136ce00d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_south_island_k_alpha_3dcuv_atlas_color.png using Guid(531d2b61b5cbdb94bae5b136ce00d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '446ad135556c4a27385e5eb751f579c4') in 0.025653 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Floor/_chunk_jungle_west_island_d_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(cd58220630d629c478bedbf1452a7c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_west_island_d_alpha_3dcuv_atlas_color.png using Guid(cd58220630d629c478bedbf1452a7c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdcdabc20b3e8207e0f854938b816551') in 0.021084 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Floor/grnd_terrain_j.png
-  artifactKey: Guid(3db5417977ac7c34ba4c02851223e5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/grnd_terrain_j.png using Guid(3db5417977ac7c34ba4c02851223e5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b796a6f9c174f76499bd45c2981195c0') in 0.018012 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Floor/_chunk_jungle_south_island_c_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(4b5c0b3d262b90a4ca6aa955ba909c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_south_island_c_alpha_3dcuv_atlas_color.png using Guid(4b5c0b3d262b90a4ca6aa955ba909c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250a75ecdc722759eed47390a4538334') in 0.021386 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Floor/_chunk_jungle_east_island_b_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(da2d5639e62a548459fe1dbd5f6c31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_east_island_b_alpha_3dcuv_atlas_color.png using Guid(da2d5639e62a548459fe1dbd5f6c31f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f738a8370ed5493334e843e35d12baa7') in 0.029718 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Floor/_chunk_jungle_south_island_b_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(8fc1f29cf4b33af4c9afc8b395d623bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_south_island_b_alpha_3dcuv_atlas_color.png using Guid(8fc1f29cf4b33af4c9afc8b395d623bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f73dc9242a72120d4f543b0a394e7a4e') in 0.024923 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Floor/_chunk_jungle_south_island_i_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(42f9dece22ac8af47b28a901828e872f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_south_island_i_alpha_3dcuv_atlas_color.png using Guid(42f9dece22ac8af47b28a901828e872f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2416a513a7b1ac026b982764bf0b13') in 0.021285 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Floor/_chunk_base_north_walls_f_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(9b41bebe5afa692458dc1fb9a3e40bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_base_north_walls_f_alpha_3dcuv_atlas_color.png using Guid(9b41bebe5afa692458dc1fb9a3e40bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adfb906ead65611c09e9f6cab930e64a') in 0.018097 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Floor/grnd_terrain_f.png
-  artifactKey: Guid(a144aac8364d39d4394b3f989489a0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/grnd_terrain_f.png using Guid(a144aac8364d39d4394b3f989489a0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4149313fdc9c033e76f57f1b82f4e054') in 0.021826 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Floor/bk_distant_horizon_a.png
-  artifactKey: Guid(61bf69ddb70a69345b57f8cc6d914126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/bk_distant_horizon_a.png using Guid(61bf69ddb70a69345b57f8cc6d914126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8255f954d557be1c7b1f611f161a869e') in 0.018364 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Floor/periph_south_f1.png
-  artifactKey: Guid(f64c0a13b36449e45ba7896a065757ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/periph_south_f1.png using Guid(f64c0a13b36449e45ba7896a065757ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ed13bba4bfdb43d0bf4c0630ed3837') in 0.026202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Floor/periph_southeast_d2.png
-  artifactKey: Guid(2b2a489008c193941becb7125eeabd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/periph_southeast_d2.png using Guid(2b2a489008c193941becb7125eeabd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f508c9a354cb7ed8ca3e02187e0c022') in 0.020861 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Floor/periph_south_walls_f.png
-  artifactKey: Guid(ebeec6ac8c9baca499919a223fc7491d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/periph_south_walls_f.png using Guid(ebeec6ac8c9baca499919a223fc7491d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc4719d060c5c680ed9135ae7791cff') in 0.023097 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Floor/_chunk_jungle_south_island_l_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(cec723b8f220409448c65f8ea9c3538a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_south_island_l_alpha_3dcuv_atlas_color.png using Guid(cec723b8f220409448c65f8ea9c3538a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b43105f5d69cdc5b949c876efff71d') in 0.026806 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Floor/periph_east_b1.png
-  artifactKey: Guid(6c23540fe30646045be16f2d4f2eaa6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/periph_east_b1.png using Guid(6c23540fe30646045be16f2d4f2eaa6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ffae5519ab1dc6994878117e1753fe') in 0.022721 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Floor/base_south_foliage.png
-  artifactKey: Guid(4c930f82dcb8f6143b77131da69f4d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/base_south_foliage.png using Guid(4c930f82dcb8f6143b77131da69f4d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e914f976c85e6fc9923c725341e30a0') in 0.019350 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Floor/_chunk_jungle_west_island_e_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(0e983960a1f0bdb48918915577410f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_west_island_e_alpha_3dcuv_atlas_color.png using Guid(0e983960a1f0bdb48918915577410f42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf4fe0b4806cc74190e633a2573d229') in 0.023967 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Floor/grnd_terrain_r.png
-  artifactKey: Guid(0077f99f511ecf64b9ac3266bcb7d29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/grnd_terrain_r.png using Guid(0077f99f511ecf64b9ac3266bcb7d29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f4c25ef548afc390fa37f17cc30fa07') in 0.019296 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Floor/periph_east_d2.png
-  artifactKey: Guid(522c4e73142ee7c44abe2707aacd8b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/periph_east_d2.png using Guid(522c4e73142ee7c44abe2707aacd8b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bdfdecba67dbf4592eb3f589a6b92c') in 0.031801 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Floor/grnd_terrain_e.png
-  artifactKey: Guid(fef68d859edb45343a9dadaa532d37f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/grnd_terrain_e.png using Guid(fef68d859edb45343a9dadaa532d37f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4ef99364a37dbf6e516ac9c6714f32') in 0.019227 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Floor/south_island_f_dragonpita.png
-  artifactKey: Guid(d371a86bd7a5d9d4d87b193b82bf16e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/south_island_f_dragonpita.png using Guid(d371a86bd7a5d9d4d87b193b82bf16e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ffcddb65958ecff1ad5f65b5253e0b3') in 0.020818 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Floor/mage_spawn_pad_b.png
-  artifactKey: Guid(f74bd70726a204a4d82667e121798324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/mage_spawn_pad_b.png using Guid(f74bd70726a204a4d82667e121798324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f5df4d95b8704f7e180c2f44d62b67') in 0.020078 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Floor/pally_platform.png
-  artifactKey: Guid(94e9ff2b245171c46a1e7b1b303d96a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/pally_platform.png using Guid(94e9ff2b245171c46a1e7b1b303d96a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4e6c5ecf6376f506665baa31af69ee5') in 0.026075 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Floor/jungle_north_island_fb.png
-  artifactKey: Guid(4faedfc22629dc543845b72e263771c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/jungle_north_island_fb.png using Guid(4faedfc22629dc543845b72e263771c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527091ea882a7bca8eeddde581761e77') in 0.020253 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Floor/paly_south_base_edge_wall_right_a1.png
-  artifactKey: Guid(1c0cc6f8a70a31842bf6347a63c3ee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/paly_south_base_edge_wall_right_a1.png using Guid(1c0cc6f8a70a31842bf6347a63c3ee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68978a9ab2b153aa7d778669084f271d') in 0.021337 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Floor
-  artifactKey: Guid(f1c3e5f30207ba74b9b13f726450f0d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor using Guid(f1c3e5f30207ba74b9b13f726450f0d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa276b70171c72534ad8316667a22214') in 0.000522 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Floor/_chunk_jungle_east_island_d_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(122ee4f8ea674054aab7e96911e019e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_east_island_d_alpha_3dcuv_atlas_color.png using Guid(122ee4f8ea674054aab7e96911e019e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b13178e0c789d10378f70115ee9c24a') in 0.028434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Floor/_chunk_base_south_walls_c_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(180c747c490054d40874d8a7c951c395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_base_south_walls_c_alpha_3dcuv_atlas_color.png using Guid(180c747c490054d40874d8a7c951c395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cfc16e4241331313c0155e9669637d1') in 0.032068 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Floor/_chunk_jungle_east_island_e_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(dbf59e4ec5dcaad47addfe3ec2c5d282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_east_island_e_alpha_3dcuv_atlas_color.png using Guid(dbf59e4ec5dcaad47addfe3ec2c5d282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be8abbb5734abaebd46f72fa2f6bf544') in 0.023138 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Floor/_chunk_jungle_west_island_c_alpha_3dcuv_atlas_color.png
-  artifactKey: Guid(e5181083b0ffbaa4284ca15cc5e7d402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/_chunk_jungle_west_island_c_alpha_3dcuv_atlas_color.png using Guid(e5181083b0ffbaa4284ca15cc5e7d402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632e86fab98cd304e37ff5cd9681fbea') in 0.027485 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Floor/periph_west_d3.png
-  artifactKey: Guid(92b2ca70d405d42408bb32b06d632876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/periph_west_d3.png using Guid(92b2ca70d405d42408bb32b06d632876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c84fbb29ea5c3fef9c9abc2d76c991') in 0.028358 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Floor/summoner_rift.obj
-  artifactKey: Guid(60baba8fa8aabbd47890eb9cf1ac5240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/summoner_rift.obj using Guid(60baba8fa8aabbd47890eb9cf1ac5240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb693d4d28159e5e9c43528974adbc4') in 2.464930 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 248
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (0.8 KB). Loaded Objects now: 3579.
-Memory consumption went from 72.0 MB to 72.0 MB.
-Total: 3.959600 ms (FindLiveObjects: 0.355900 ms CreateObjectMapping: 0.331000 ms MarkObjects: 3.230400 ms  DeleteObjects: 0.041200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -481,9 +180,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 335.638112 seconds.
-  path: Assets/Floor/summoner_rift.obj
-  artifactKey: Guid(60baba8fa8aabbd47890eb9cf1ac5240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Floor/summoner_rift.obj using Guid(60baba8fa8aabbd47890eb9cf1ac5240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b2c9b5d761a325c01c4d86d65c60ac5') in 1.448629 seconds
+  Time since last request: 253635.782365 seconds.
+  path: Assets/Scripts/CameraFollow.cs
+  artifactKey: Guid(be5ef8d422561a047b2c27f6566024bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/CameraFollow.cs using Guid(be5ef8d422561a047b2c27f6566024bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd50c71dfd650b7d413baf6930daab600') in 0.002391 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 248
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Scripts/Champion.cs
+  artifactKey: Guid(eedbe023b31c5d54da0332bae5b5ee4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Champion.cs using Guid(eedbe023b31c5d54da0332bae5b5ee4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9990d6a98980680455801500ce1675d') in 0.000667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(56f1864e99f77a446a3a8d5959321bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(56f1864e99f77a446a3a8d5959321bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a098eb558fac4731a73cc199679d73') in 0.000512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/New Material.mat
+  artifactKey: Guid(5ac24cb450a64694683e976b8e7eb82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/New Material.mat using Guid(5ac24cb450a64694683e976b8e7eb82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99dd14861ec8cdaf3233cbbc2e3a9691') in 0.168552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 42.982168 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e242d5e32e9b5cf4e3149799670804f') in 0.000610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
