@@ -8,9 +8,31 @@ public class Structure : Hittable
     
     public GameObject[] towers;
     public GameObject[] inhibs;
+    bool isAttacking;
+    GameObject target;
     public override bool attackFunction(GameObject hittableObject)
     {
-        return false;
+        UnityEngine.Debug.Log("tower hitting");
+        Hittable hittableObjectComponent = hittableObject.GetComponent<Hittable>();        
+        float physicalDamage = (hittableObjectComponent.armour > this.attackDamage) ? 0 : this.attackDamage - hittableObjectComponent.armour;
+        hittableObjectComponent.healthPoints -= physicalDamage;
+        UnityEngine.Debug.Log(hittableObjectComponent.healthPoints);
+        return true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Champion champ = other.gameObject.GetComponent<Champion>();
+        if (champ != null && champ.team != this.team) {
+            isAttacking = true;
+            target = other.gameObject;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        isAttacking = false;
+        target = null;
     }
 
     public override void Start()
@@ -19,6 +41,15 @@ public class Structure : Hittable
     }
     public override void Update()
     {
+        if (isAttacking && timeLeft <= 0) {
+            attackFunction(target);
+            timeLeft = attackSpeed;
+        } else {
+            if (timeLeft > 0){ //cos gab a lil crybaby and doesnt want the time to go to -8 rotated 90 degrees
+                timeLeft -= Time.deltaTime;
+            }
+        }
+
         if (inhibs.Length > 0) { // IF WE CARE ABOUT INHIBS!!!!!!!!!!!!!!!!!
             foreach (GameObject inhib in inhibs) {
                 if (inhib == null) {

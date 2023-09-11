@@ -10,11 +10,13 @@ public abstract class Hittable : MonoBehaviour {
     public float autoRange;
     public float speed;
     public float attackDamage;
+    public float attackSpeed;
     public float abilityPower;
     public float armour;
     public float magicResist;
-    public Rigidbody rb;
     public float healthPoints;
+    public float timeLeft;
+    public Rigidbody rb;
     public bool invulnerable;
     
     public void LateUpdate() {
